@@ -13,7 +13,7 @@ readme = "./README.md"
 
 [dependencies]
 # crates.io
-codec = { workspace = true }
+codec = { workspace = true, features = ["derive"], default-features = true }
 primitive-types = { workspace = true, features = [
     "codec",
     "scale-info",
