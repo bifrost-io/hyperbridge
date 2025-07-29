@@ -13,7 +13,7 @@ pallet-hyperbridge = { workspace = true }
 substrate-state-machine = { workspace = true }
 log = { workspace = true, default-features = false }
 hash-db = { workspace = true, default-features = false }
-codec = { workspace = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 
 [dependencies.polkadot-sdk]
 workspace = true

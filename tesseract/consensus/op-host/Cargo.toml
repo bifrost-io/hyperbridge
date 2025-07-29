@@ -27,7 +27,7 @@ tokio-stream = { workspace = true }
 alloy-primitives = { workspace = true, features = ["rlp"] }
 serde-hex-utils = { workspace = true }
 reqwest = { workspace = true, features=["json"]}
-codec = { workspace = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 reqwest-middleware = { workspace = true }
 reqwest-chain = {workspace = true}
 sync-committee-prover = { workspace = true }

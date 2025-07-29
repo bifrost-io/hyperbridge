@@ -13,7 +13,7 @@ keywords = ["substrate", "polkadot-sdk", "ISMP", "interoperability", "GRANDPA"]
 [dependencies]
 # crates.io
 anyhow = { workspace = true }
-codec = { workspace = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 log = { workspace = true }
 ismp = { workspace = true }
 

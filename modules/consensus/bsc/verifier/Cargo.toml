@@ -14,7 +14,7 @@ alloy-rlp = { workspace = true }
 alloy-primitives = { workspace = true }
 alloy-rlp-derive = { workspace = true }
 primitive-types = { workspace = true }
-codec = { workspace = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 ismp = { workspace = true, default-features = false }
 geth-primitives = { workspace = true, default-features = false }
 sync-committee-verifier = { workspace = true, default-features = false }

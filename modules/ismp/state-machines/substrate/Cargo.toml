@@ -16,7 +16,7 @@ ismp = { workspace = true }
 pallet-ismp = { workspace = true }
 
 # crates.io
-codec = { workspace = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 primitive-types = { workspace = true }
 serde = { workspace = true, features = ["derive"] }
 scale-info = { workspace = true, features = ["derive"] }

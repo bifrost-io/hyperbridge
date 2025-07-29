@@ -7,7 +7,7 @@ publish = false
 [dependencies]
 subxt = { workspace = true }
 ismp = { workspace = true }
-codec = { workspace = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 anyhow = { workspace = true }
 reconnecting-jsonrpsee-ws-client = { workspace = true }
 primitive-types = { workspace = true, features = ["scale-info", "serde"] }

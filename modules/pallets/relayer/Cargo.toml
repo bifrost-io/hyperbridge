@@ -17,7 +17,7 @@ ismp = { workspace = true }
 # crates.io
 log = { workspace = true, default-features = false }
 hashbrown = { version = "0.14.3" }
-codec = { workspace = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 scale-info = { workspace = true }
 alloy-rlp = { workspace = true }
 alloy-primitives = { workspace = true }

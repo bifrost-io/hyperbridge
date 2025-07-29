@@ -14,7 +14,7 @@ pallet-token-governor = { workspace = true }
 pallet-token-gateway = { workspace = true }
 
 # crates.io
-codec = { workspace = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 anyhow = { workspace = true }
 scale-info = { workspace = true }
 alloy-primitives = { workspace = true }

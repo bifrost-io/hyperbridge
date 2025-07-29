@@ -9,7 +9,7 @@ publish = false
 
 [dependencies]
 # crates.io
-codec = { workspace = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 scale-info = { workspace = true }
 ruzstd = { version = "0.6.0", default-features = false }
 log = { workspace = true }

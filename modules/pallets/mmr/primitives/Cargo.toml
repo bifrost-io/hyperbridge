@@ -13,7 +13,7 @@ publish = false
 
 [dependencies]
 merkle-mountain-range = { workspace = true }
-codec = { workspace = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 serde = { workspace = true, features = ["derive"] }
 scale-info = { workspace = true }
 ismp = { workspace = true }

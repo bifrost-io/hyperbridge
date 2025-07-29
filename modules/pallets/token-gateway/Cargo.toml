@@ -20,7 +20,7 @@ readme = "README.md"
 [dependencies]
 primitive-types = { workspace = true }
 log = { workspace = true }
-codec = { workspace = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 scale-info = { workspace = true }
 anyhow = { workspace = true }
 alloy-primitives = { workspace = true }

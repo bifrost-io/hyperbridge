@@ -14,7 +14,7 @@ crate-type = ["cdylib", "rlib"]
 # workspace
 subxt = { workspace = true }
 anyhow = { workspace = true }
-codec = { workspace = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 tokio = { workspace = true, features = ["macros"] }
 primitive-types = { workspace = true, features = ["serde"] }
 ethers = { workspace = true }

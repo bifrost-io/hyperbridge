@@ -13,7 +13,7 @@ pallet-ismp = { workspace = true }
 pallet-hyperbridge = { workspace = true }
 
 # crates.io
-codec = { workspace = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 scale-info = { workspace = true }
 anyhow = { workspace = true }
 primitive-types = { workspace = true }
