@@ -10,7 +10,7 @@ publish = false
 [dependencies]
 log = { workspace = true, default-features = false }
 anyhow = { workspace = true, default-features = false }
-codec = { workspace = true, default-features = false }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 scale-info = { version = "2.1.1", default-features = false, features = [
     "derive",
 ] }

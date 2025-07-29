@@ -23,7 +23,7 @@ alloy-sol-macro = { workspace = true }
 alloy-sol-types = { workspace = true }
 hex = { workspace = true, default-features = false }
 hex-literal = { workspace = true }
-codec = { workspace = true, default-features = false }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 ethabi = { workspace = true }
 anyhow = { workspace = true }
 

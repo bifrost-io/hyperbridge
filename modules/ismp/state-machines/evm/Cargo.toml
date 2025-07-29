@@ -23,7 +23,7 @@ hex = { workspace = true, default-features = false }
 hex-literal = { workspace = true }
 ethabi = { workspace = true }
 hash256-std-hasher = { version = "0.15.2", default-features = false }
-codec = { workspace = true, default-features = false }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 polkadot-sdk = { workspace = true, features = ["sp-crypto-hashing"] }
 primitive-types = { workspace = true }
 
