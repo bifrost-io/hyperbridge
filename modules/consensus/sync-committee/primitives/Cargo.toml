@@ -7,7 +7,7 @@ publish = false
 
 [dependencies]
 hex-literal = { workspace = true }
-codec = { workspace = true, features = ["derive"] }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 primitive-types = { workspace = true, features = [
     "serde_no_std",
     "impl-codec",

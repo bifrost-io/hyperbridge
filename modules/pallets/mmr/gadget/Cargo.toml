@@ -8,7 +8,7 @@ edition = "2021"
 publish = false
 
 [dependencies]
-codec = { workspace = true, default-features = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = true }
 futures = "0.3.30"
 pallet-ismp = { workspace = true, default-features = true }
 pallet-mmr-runtime-api = { workspace = true, default-features = true }

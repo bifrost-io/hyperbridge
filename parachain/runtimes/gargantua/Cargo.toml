@@ -10,7 +10,7 @@ publish = false
 substrate-wasm-builder = { workspace = true }
 
 [dependencies]
-codec = { workspace = true, features = ["derive"] }
+codec = { package = "parity-scale-codec", version = "3.7", features = ["derive"] }
 hex-literal = { workspace = true, optional = true }
 log = { workspace = true }
 json = { workspace = true }

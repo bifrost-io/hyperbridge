@@ -20,7 +20,7 @@ sp-core = { workspace = true, default-features = true }
 hex = "0.4.3"
 subxt = { workspace = true }
 chrono = "0.4.31"
-codec = { workspace = true, features = ["derive"] }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 
 tesseract-primitives = { workspace = true, default-features = true }
 pallet-ismp = { workspace = true, default-features = true }
