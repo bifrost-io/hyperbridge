@@ -6,7 +6,7 @@ publish = false
 
 [dependencies]
 serde = { workspace = true, features = ["derive"], optional = true }
-codec = { workspace = true }
+codec = { version = "3.7.5", package = "parity-scale-codec" }
 pallet-ismp = { workspace = true }
 
 [dependencies.polkadot-sdk]

@@ -18,7 +18,7 @@ crypto-utils = { workspace = true }
 # crates.io
 log = { workspace = true, default-features = false }
 hashbrown = { version = "0.14.3" }
-codec = { workspace = true }
+codec = { version = "3.7.5", package = "parity-scale-codec" }
 scale-info = { workspace = true }
 alloy-rlp = { workspace = true }
 alloy-primitives = { workspace = true }
