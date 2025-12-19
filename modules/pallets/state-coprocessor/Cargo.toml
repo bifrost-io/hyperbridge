@@ -10,7 +10,7 @@ publish = false
 alloy-rlp = { workspace = true }
 alloy-primitives = { workspace = true }
 scale-info = { workspace = true }
-codec = { workspace = true }
+codec = { version = "3.7.5", package = "parity-scale-codec" }
 log = { workspace = true }
 
 # polytope labs

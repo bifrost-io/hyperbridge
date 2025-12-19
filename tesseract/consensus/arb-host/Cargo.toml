@@ -24,7 +24,7 @@ log = { workspace = true }
 futures = { workspace = true }
 primitive-types = { workspace = true }
 ismp-arbitrum = { workspace = true }
-codec = { workspace = true }
+codec = { version = "3.7.5", package = "parity-scale-codec" }
 tokio = { workspace = true , features = ["full"] }
 
 [dev-dependencies]

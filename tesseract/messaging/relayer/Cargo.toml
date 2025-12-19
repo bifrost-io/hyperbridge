@@ -22,7 +22,7 @@ ismp = { workspace = true, default-features = true }
 pallet-ismp = { workspace = true, default-features = true }
 ismp-sync-committee = { workspace = true, default-features = true }
 ethers = { workspace = true }
-codec = { workspace = true, default-features = true, features = ["derive"] }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = true, features = ["derive"] }
 sp-core = { workspace = true, default-features = true, features = [
     "full_crypto",
 ] }

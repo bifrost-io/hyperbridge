@@ -13,7 +13,7 @@ readme = "README.md"
 
 [dependencies]
 ismp = { workspace = true }
-codec = { workspace = true }
+codec = { version = "3.7.5", package = "parity-scale-codec" }
 scale-info = { workspace = true }
 pallet-ismp = { workspace = true }
 primitive-types = { workspace = true }

@@ -13,7 +13,7 @@ readme = "README.md"
 
 [dependencies]
 serde = { workspace = true, features = ["derive"], optional = true }
-codec = { workspace = true, features = ["derive"] }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = false, features = ["derive"] }
 primitive-types = { workspace = true }
 
 ismp = { workspace = true }

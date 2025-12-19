@@ -11,7 +11,7 @@ log = { workspace = true, default-features = true }
 anyhow = { workspace = true, default-features = true }
 serde = { workspace = true, default-features = true }
 subxt = { workspace = true, default-features = true }
-codec = { workspace = true, default-features = true, features = ["derive"] }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = true, features = ["derive"] }
 hex-literal = { workspace = true }
 derive_more = { workspace = true, default-features = true }
 finality-grandpa = "0.16.0"

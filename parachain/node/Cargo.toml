@@ -15,7 +15,7 @@ dist = true
 # crates.io
 clap = { version = "4.0.32", features = ["derive"] }
 log = { workspace = true, default-features = true }
-codec = { workspace = true, default-features = true }
+codec = { package = "parity-scale-codec", version = "3.7", default-features = true }
 serde = { workspace = true, default-features = true }
 jsonrpsee = { workspace = true }
 futures = "0.3.28"
